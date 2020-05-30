@@ -6,7 +6,7 @@ Use split2cubes.py to first split the input image stack into cubes of fixed size
 ```bash
 python3 split2cubes.py $input_image_stack_directory $output_cubes_directory
 ```
-There will be multiple subfolders (divided along Z axis) under the output_folder. The reason is that we need to use multiple GPU to for speed-up in step 2. Each GPU will take care of one subfolder. 
+There will be multiple subfolders (divided along Z axis) under the output_folder. The reason is that we need to use multiple GPUs for speed-up in step 2. Each GPU will take care of one subfolder. 
 
 Required to install python 3.7.x.
 
