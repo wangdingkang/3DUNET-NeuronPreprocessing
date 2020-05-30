@@ -8,10 +8,11 @@ python3 split2cubes.py $input_image_stack_directory $output_cubes_directory
 ```
 
 Required to install python 3.7.x.
+
 Used packages:
-numpy
-h5py
-pillow
+*numpy
+*h5py
+*pillow
 
 ## Step 2:
 
