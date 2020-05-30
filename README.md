@@ -1,7 +1,7 @@
 # 3DUNET-NeuronPreprocessing
 Use 3DUNET on fMOST neuron imaging data to remove background noise.
 
-## Step 1:
+## Step 1 (Splitting the input image stack into cubes):
 Use split2cubes.py to first split the input image stack into cubes of fixed size.
 ```bash
 python3 split2cubes.py $input_image_stack_directory $output_cubes_directory
@@ -14,7 +14,7 @@ Used packages:
 * h5py
 * pillow
 
-## Step 2:
+## Step 2 (Removing background noise for each one of those cubes):
 
 Acknowledgement: We directly used the code from https://github.com/wolny/pytorch-3dunet for processing 3D data. Here we only adjusted some parameters (hyper-parameters).
 
