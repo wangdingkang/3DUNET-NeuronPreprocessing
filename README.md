@@ -23,4 +23,9 @@ Some important directories:
 1). "resources/", you can adjust training/testing hyperparameters in those two .yaml files.
 2). "pytorch3dunet/3dunet/", trained model is there named "fMOST_neuron1_trained.pytorch".
 
+When training or predicting, please always use single GPUs even when there are multiple GPUs available. The reason is that there were some bugs in the code related to multi-GPU, so it will output wrong results. Use
+```
+CUDA_VISIBLE_DEVICES=0
+```
+to force using single GPU.
 More details please refer to the ReadMe text in the original repository.
